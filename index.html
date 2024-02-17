@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticketting</title>
+    <link rel="shortcut icon" href="./images/fav.webp" type="image/x-icon">
+
+    <!-- daisy ui play CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font importing  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css style  -->
+    <style>
+        .raleway {
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+        }
+
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+        }
+    </style>
+
+    <!-- font awesome kit  -->
+    <script src="https://kit.fontawesome.com/3d5f563f9e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header class="container mx-auto">
+
+
+
+        <!-- navbar section  -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  text-[#030712B3] raleway font-medium text-xl">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="text-xl lg:text-3xl text-[#030712] font-extrabold raleway">E-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#030712B3] raleway font-medium text-xl">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+
+                <div class="text-[#1DD100] font-bold text-[20px] btn bg-[#1DD1001A] border border-[ #1DD10066]"><a
+                        href="">Bus</a> <img src="./images/bus-icon.png" alt=""></div>
+            </div>
+        </div>
+        <!-- navbar section  -->
+    </header>
+
+
+    <main class="container mx-auto">
+        <!-- banner section  -->
+        <section class="my-10">
+            <div
+                class="flex flex-col justify-center items-center text-center bg-center bg-no-repeat h-[82vh] lg:h-[100vh] rounded-3xl bg-[linear-gradient(360deg,rgba(3,7,18,0.5),rgba(3,7,18,0)),url(./images/banner.png)]  space-y-8">
+                <h2 class="font-extrabold text-xl lg:text-3xl raleway text-white">End-to-End Travel with <br> <span
+                        class="text-[#1DD100]">PRINCE Paribahan</span></h2>
+                <p class="inter font-normal text-white text-xs w-2/3">Elevate Your Logistics Experience with Us! From
+                    efficient cargo handling to timely deliveries, our transport company ensures reliability and
+                    excellence at every step. Explore our services now!</p>
+                <button class="  text-[#030712] raleway font-bold text-xl bg-[#1DD100] btn  ">Buy Tickets</button>
+            </div>
+            <!-- card section -->
+            <div
+                class="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-5 px-5 mt-10 lg:mt-0 lg:px-16 lg:-translate-y-12 ">
+                <!-- 1st card  -->
+                <div class="flex items-center gap-2 bg-white rounded-2xl border-b-4 border-b-[#1DD100] p-4 ">
+                    <div><img src="./images/people.png" alt=""></div>
+                    <div>
+                        <h4 class="inter font-bold text-2xl">500K+</h4>
+                        <p class="text-[ #03071299] inter font-normal text-xs">Registered users</p>
+                    </div>
+                </div>
+
+                <!-- 2nd card  -->
+                <div class="flex items-center gap-2 bg-white rounded-2xl border-b-4 border-b-[#1DD100] p-4">
+                    <div><img src="./images/ticket-cupon.png" alt=""></div>
+                    <div>
+                        <h4 class="inter font-bold text-2xl">1.7 lacks</h4>
+                        <p class="text-[ #03071299] inter font-normal text-xs">Tickets sold</p>
+                    </div>
+                </div>
+
+                <!-- 3rd card  -->
+                <div class="flex items-center gap-2 bg-white rounded-2xl border-b-4 border-b-[#1DD100] p-4">
+                    <div><img src="./images/stoppage.png" alt=""></div>
+                    <div>
+                        <h4 class="inter font-bold text-2xl">80K+</h4>
+                        <p class="text-[ #03071299] inter font-normal text-xs">Rental partners</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- banner section  -->
+
+
+        <!-- coupon section  -->
+        <section class="my-10">
+            <div class="text-center space-y-10 px-2 lg:px-0 mx-auto">
+                <h2 class="text-[#030712] font-bold text-3xl">Best offers for you</h2>
+                <!-- two coupons -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
+                    <!-- 1st coupon -->
+                    <div class="bg-[#FFBF0F] flex justify-center items-center rounded-xl pl-2 lg:pl-0 ">
+                        <!-- 1st part -->
+                        <div class="text-center">
+                            <h3 class=" inter text-[#030712CC] font-extrabold text-2xl">15% OFF</h3>
+                            <p class="inter text-[#030712CC] font-semibold text-xs">on your next purchase</p>
+                            <p class="text-[#03071280] font-medium text-xs">use by January 2024</p>
+                        </div>
+                        <!-- divider -->
+                        <div><img src="./images/cupon-devider.png" alt=""></div>
+                        <!-- 2nd part -->
+                        <div class="pl-5 lg:pl-10 pr-2 lg:pr-0">
+                            <h3 class="raleway font-bold text-xl lg:text-2xl text-center text-[#030712]">NEW15</h3>
+                            <P class="text-[ #03071266] font-medium text-xs text-center raleway">Coupon Code</P>
+                        </div>
+                    </div>
+
+
+                    <!-- 2nd coupon -->
+                    <div class="bg-[#F78C9C] flex justify-center items-center rounded-xl pl-2 lg:pl-0 ">
+                        <!-- 1st part -->
+                        <div class="text-center">
+                            <h3 class=" inter text-[#030712CC] font-extrabold text-2xl">20% OFF</h3>
+                            <p class="inter text-[#030712CC] font-semibold text-xs">on your next purchase</p>
+                            <p class="text-[#03071280] font-medium text-xs">use by January 2024</p>
+                        </div>
+                        <!-- divider -->
+                        <div><img src="./images/cupon-devider.png" alt=""></div>
+                        <!-- 2nd part -->
+                        <div class=" lg:pl-10 pr-2 lg:pr-0">
+                            <h3 class="raleway font-bold text-xl lg:text-2xl text-center text-[#030712]">Couple 20</h3>
+                            <P class="text-[ #03071266] font-medium text-xs text-center raleway">Coupon Code</P>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <button
+                    class="btn btn-outline  raleway font-bold text-xl text-[#1DD100] border-2 border-[#1DD100] w-fit">See
+                    All Offers</button>
+
+             </div>
+
+        </section>
+
+        <!-- coupon section  -->
+
+
+        <!-- Poribohon timeline section  -->
+        <section>
+
+
+
+            
+        </section>
+        <!-- Poribohon timeline section  -->
+    </main>
+</body>
+
+</html>
