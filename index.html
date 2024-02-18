@@ -18,9 +18,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 
 
 
@@ -37,27 +37,33 @@
             font-style: normal;
 
         }
+
         .roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
 
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+        .roboto-medium {
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
 
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+        .roboto-bold {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
 
-        .buttons{
+        .buttons {
             border: 1px solid black;
         }
+
+        /* input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-outer-spin-button{
+            -webkit-appearance:none;
+            margin: 0;
+        } */
     </style>
 
     <!-- font awesome kit  -->
@@ -120,7 +126,8 @@
                 <p class="inter font-normal text-white text-xs w-2/3 ">Elevate Your Logistics Experience with Us! From
                     efficient cargo handling to timely deliveries, our transport company ensures reliability and
                     excellence at every step. Explore our services now!</p>
-                <a href="#paribahan" class="  text-[#030712] raleway font-bold text-xl bg-[#1DD100] btn  ">Buy Tickets</a>
+                <a href="#paribahan" class="  text-[#030712] raleway font-bold text-xl bg-[#1DD100] btn  ">Buy
+                    Tickets</a>
             </div>
             <!-- card section -->
             <div
@@ -183,7 +190,7 @@
 
 
                     <!-- 2nd coupon -->
-                    <div class="bg-[#F78C9C] flex justify-center items-center rounded-xl pl-2 lg:pl-0 ">
+                    <div class="bg-[#F78C9C] flex justify-center items-center rounded-xl pl-2 lg:pl-0  ">
                         <!-- 1st part -->
                         <div class="text-center">
                             <h3 class=" inter text-[#030712CC] font-extrabold text-2xl">20% OFF</h3>
@@ -247,11 +254,14 @@
                             </div>
                             <!-- seats part  -->
                             <div>
-                                <button class="btn py-1 lg:py-0 w-fit bg-[#1DD10026]">
-                                    <img src="./images/seat-green.png" alt="">
-                                    <p class="inter  font-medium text-[10px] lg:text-xs text-[#1DD100]"><span id="totalSeats">40</span>
+                                <div class="btn  flex lg:py-0  bg-[#1DD10026]">
+                                    <div><img src="./images/seat-green.png" alt=""></div>
+                                    <div>
+                                        <p class="inter  font-medium text-[10px] lg:text-xs text-[#1DD100]"><span
+                                            id="totalSeats">40</span>
                                         Seats left</p>
-                                </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -324,7 +334,8 @@
                     </div>
                     <!-- fan button  -->
                     <div class="flex justify-end">
-                        <div class="w-[60px] lg:w-[100px] border border-black  my-4 rounded-lg flex justify-center bg-[#0307121A]">
+                        <div
+                            class="w-[60px] lg:w-[100px] border border-black  my-4 rounded-lg flex justify-center bg-[#0307121A]">
                             <img class="p-2" src="./images/fan.png" alt="">
                         </div>
                     </div>
@@ -435,7 +446,8 @@
                         <!-- table fields  -->
                         <div
                             class="flex justify-between py-3 border-b-2 border-dashed inter text-xs font-bold text-[#030712]">
-                            <p class="flex gap-1">Seat <span id="noOfselected" class="bg-[#1DD100] px-1 text-white rounded-md ">0</span>
+                            <p class="flex gap-1">Seat <span id="noOfselected"
+                                    class="bg-[#1DD100] px-1 text-white rounded-md ">0</span>
                             </p>
                             <p>Class</p>
                             <p>Price</p>
@@ -454,7 +466,8 @@
                         </div>
 
                         <!-- Discount Price -->
-                        <div id="discount" class="inter py-3 flex justify-between   font-bold text-xs text-[#030712] hidden" >
+                        <div id="discount"
+                            class="inter py-3 flex justify-between   font-bold text-xs text-[#030712] hidden">
 
 
                         </div>
@@ -463,7 +476,8 @@
                         <label id="inputLabel" class="input  flex  items-center pr-2 gap-2">
                             <input id="coupon" type="text" class="grow outline-none " placeholder="Have any coupon?" />
                             <button id="apply"
-                                class="text-white -translate-x-12 lg:-translate-x-3 cursor-pointer text-xs font-bold btn w-2/6  bg-[#1DD100] rounded-lg px-3" disabled>Apply</button>
+                                class="text-white -translate-x-12 lg:-translate-x-3 cursor-pointer text-xs font-bold btn w-2/6  bg-[#1DD100] rounded-lg px-3"
+                                disabled>Apply</button>
                         </label>
                         <!-- grand total  -->
                         <div class="inter font-bold py-3 flex justify-between text-xs text-[#030712]">
@@ -479,7 +493,8 @@
                             <div class="mb-2">
                                 <span class="inter font-bold text-xs text-[#030712] px-0">Passenger Name*</span>
                             </div>
-                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full" required/>
+                            <input type="text" placeholder="Enter your name" class="input input-bordered w-full"
+                                required />
                         </label>
 
                         <!-- phone number  -->
@@ -489,7 +504,7 @@
                             </div>
 
                             <input type="number" id="phoneNumber" placeholder="Enter your phone number"
-                                class="input input-bordered w-full" />
+                                class="input input-bordered w-full " />
                         </label>
                         <!-- email  -->
                         <label class="form-control w-full max-w-xs">
@@ -499,26 +514,29 @@
                             <input type="email" placeholder="Enter your email id" class="input input-bordered w-full" />
                         </label>
                         <!-- button  -->
-                        <button id="next" class="btn raleway w-full text-xl font-bold text-white bg-[#1DD100]" onclick="my_modal_1.showModal()" disabled>Next</button>
+                        <button id="next" class="btn raleway w-full text-xl font-bold text-white bg-[#1DD100]"
+                            onclick="my_modal_1.showModal()" disabled>Next</button>
 
-<!-- optional -->
+                        <!-- optional -->
 
-            <dialog id="my_modal_1" class="modal ">
-                <div class="modal-box text-center space-y-2">
-                    <div class="flex flex-col justify-center items-center">
-                        <img class="w-[70px] mx-auto" src="./images/success.png" alt="">
-                        <h1 class="text-center mt-5 text-[#1DD100] text-xl roboto-bold">SUCCESS</h1>
-                    </div>
-                  <h3 class="text-xs text-[#4A4A4A] roboto-medium px-20">Thank You for Booking Our Bus Seats. We are working hard to find the best services and deals for you.</h3>
-                  <p class="text-[#4A4A4A] roboto-light text-xs">Shortly you will find a confirmation in your email.</p>
-                  <div class="">
-                    <form method="dialog">
-                      <!-- if there is a button in form, it will close the modal -->
-                      <button class="btn w-fit px-6  text-white bg-fuchsia-600">Continue</button>
-                    </form>
-                  </div>
-                </div>
-              </dialog>
+                        <dialog id="my_modal_1" class="modal ">
+                            <div class="modal-box text-center space-y-2">
+                                <div class="flex flex-col justify-center items-center">
+                                    <img class="w-[70px] mx-auto" src="./images/success.png" alt="">
+                                    <h1 class="text-center mt-5 text-[#1DD100] text-xl roboto-bold">SUCCESS</h1>
+                                </div>
+                                <h3 class="text-xs text-[#4A4A4A] roboto-medium px-8 lg:px-20">Thank You for Booking Our Bus
+                                    Seats. We are working hard to find the best services and deals for you.</h3>
+                                <p class="text-[#4A4A4A] roboto-light text-xs">Shortly you will find a confirmation in
+                                    your email.</p>
+                                <div class="">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn w-fit px-6  text-white bg-fuchsia-600">Continue</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
 
 
 
@@ -557,9 +575,9 @@
             <div class="flex flex-col lg:flex-row justify-between  py-7 border-b-2 border-dashed">
                 <!-- 1st  -->
                 <div class="space-y-4">
-                    <h2 class="text-white raleway font-extrabold text-2xl text-center lg:text-left ">E-Ticket</h2>
+                    <h2 class="text-white raleway font-extrabold text-2xl text-center lg:text-left ">P-Ticket</h2>
                     <p class=" text-[#FFFFFFCC] lg:w-2/3 mx-auto lg:mx-0 font-normal text-xs  lg:text-xl inter ">
-                        E-Ticket is a digital platform to make your daily commuting better.</p>
+                        P-Ticket is a digital platform to make your daily commuting better.</p>
                 </div>
                 <!-- 2nd  -->
                 <div class="flex flex-col justify-center items-center space-y-4 mt-10 lg:mt-0">
@@ -578,13 +596,13 @@
             <div class="flex flex-col lg:flex-row justify-between items-center py-7">
                 <!-- copy right  -->
                 <div>
-                    <p class="inter font-normal text-[12px] lg:text-xs text-[#FFFFFFB3]">@all rights reserved, E-Ticket
+                    <p class="inter font-normal text-[12px] lg:text-xs text-[#FFFFFFB3]">@all rights reserved, P-Ticket
                         services limited.2024</p>
                 </div>
                 <!-- terms condition  -->
                 <div
                     class="inter text-xs font-medium text-white flex flex-col lg:flex-row justify-center items-center mt-10 lg:mt-0 gap-5">
-                    <a href="">Terms & condition</a>
+                    <a href="">Terms & conditions</a>
                     <a href="">Return & refund policy</a>
                     <a href="">Privacy policy</a>
                 </div>
@@ -597,7 +615,7 @@
     </footer>
 
 
-<script src="ticket.js"> </script>
+    <script src="ticket.js"> </script>
 
 
 </body>
