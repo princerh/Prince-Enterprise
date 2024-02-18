@@ -83,16 +83,9 @@ document.getElementById("apply").addEventListener("click", function(){
 
 
             createTagAndSetInnerText("discount", "Discount");
-            const discountDiv = document.getElementById("discount");
-            const bdt = document.createElement("p")
-            bdt.innerText = "BDT";
-            bdt.style.gap = "1px";
-            const spanPrice = document.createElement("span");
-            spanPrice.innerText = discount;
-            spanPrice.style.marginLeft = "9px";
-            bdt.appendChild(spanPrice);
-            discountDiv.appendChild(bdt);
-
+            document.getElementById("discount").classList.remove("hidden");
+            
+setDiscount("discount", discount);
 
 
 
@@ -108,15 +101,8 @@ document.getElementById("apply").addEventListener("click", function(){
             
 
             createTagAndSetInnerText("discount", "Discount");
-            const discountDiv = document.getElementById("discount");
-            const bdt = document.createElement("p")
-            bdt.innerText = "BDT";
-            
-            const spanPrice = document.createElement("span");
-            spanPrice.innerText = discount;
-            spanPrice.style.marginLeft = "9px";
-            bdt.appendChild(spanPrice);
-            discountDiv.appendChild(bdt);
+            document.getElementById("discount").classList.remove("hidden");
+            setDiscount("discount", discount);
 
 
 
@@ -169,3 +155,15 @@ function createTagAndSetInnerText(ParentID, INNERTEXT){
     parentElement.appendChild(tagVariable);
 }
 
+// function to set discount 
+function setDiscount(parentDiv, discount){
+    const discountDiv = document.getElementById(parentDiv);
+            const bdt = document.createElement("p")
+            bdt.innerText = "BDT";
+            bdt.style.gap = "1px";
+            const spanPrice = document.createElement("span");
+            spanPrice.innerText = discount;
+            spanPrice.style.marginLeft = "9px";
+            bdt.appendChild(spanPrice);
+            discountDiv.appendChild(bdt);
+}
