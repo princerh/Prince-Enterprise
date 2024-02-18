@@ -82,7 +82,7 @@ document.getElementById("apply").addEventListener("click", function(){
             const discount = totalCurrentPrice * 15/100;
 
 
-            createTagAndSetInnerText("discount", "Discount");
+            createTagAndSetInnerText("discount", "Discount Price");
             document.getElementById("discount").classList.remove("hidden");
             
 setDiscount("discount", discount);
@@ -100,7 +100,7 @@ setDiscount("discount", discount);
 
             
 
-            createTagAndSetInnerText("discount", "Discount");
+            createTagAndSetInnerText("discount", "Discount Price");
             document.getElementById("discount").classList.remove("hidden");
             setDiscount("discount", discount);
 
