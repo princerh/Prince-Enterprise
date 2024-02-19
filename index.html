@@ -26,6 +26,9 @@
 
     <!-- css style  -->
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         .raleway {
             font-family: "Raleway", sans-serif;
             font-style: normal;
@@ -60,6 +63,7 @@
             border: 1px solid black;
         }
 
+        
         /* input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-outer-spin-button{
             -webkit-appearance:none;
             margin: 0;
@@ -126,7 +130,7 @@
                 <p class="inter font-normal text-white text-xs w-2/3 ">Elevate Your Logistics Experience with Us! From
                     efficient cargo handling to timely deliveries, our transport company ensures reliability and
                     excellence at every step. Explore our services now!</p>
-                <a href="#paribahan" class="  text-[#030712] raleway font-bold text-xl bg-[#1DD100] btn  ">Buy
+                <a href="#paribahan" class="scroll scroll-smooth text-[#030712] raleway font-bold text-xl bg-[#1DD100] btn  ">Buy
                     Tickets</a>
             </div>
             <!-- card section -->
@@ -254,10 +258,12 @@
                             </div>
                             <!-- seats part  -->
                             <div>
-                                <div class="btn  flex lg:py-0  bg-[#1DD10026]">
+                                <div class="btn  flex flex-nowrap whitespace-nowrap lg:py-0  bg-[#1DD10026]" style="
+                                padding-left: 10px;
+                            ">
                                     <div><img src="./images/seat-green.png" alt=""></div>
                                     <div>
-                                        <p class="inter  font-medium text-[10px] lg:text-xs text-[#1DD100]"><span
+                                        <p class="inter  font-medium text-[14px] lg:text-xs text-[#1DD100]"><span
                                             id="totalSeats">40</span>
                                         Seats left</p>
                                     </div>
